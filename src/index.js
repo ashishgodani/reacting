@@ -1,15 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export default class HelloWorld extends React.Component {
-  render() {
-    return(
-      <div><h1>HelloWorld</h1></div>
-    );
-  }
-}
+import Layout from './pages/Layout';
+import routes from './config/routes'
 
-ReactDOM.render(
-  <HelloWorld/>,
-  document.getElementById('app')
-);
+const app = document.getElementById('app');
+
+ReactDOM.render(routes, app);
